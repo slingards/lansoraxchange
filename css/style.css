@@ -60,9 +60,9 @@
 
         .hero{
             width:100%;
-            height:100vh;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
-            url('../images/sec1bg.jpg');
+            min-height: 100vh;
+            position: relative;
+            background: url('../images/sec1bg.jpg');
 
             animation: bgSwitch 20s infinite;
             animation-duration: 35s;
@@ -81,14 +81,10 @@
         .hero::before {
             content: "";
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            inset: 0;   /* BEST FIX — replaces top/left/width/height */
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8));
             z-index: 1;
         }
-
         /* keep content above overlay */
         .hero > * {
             position: relative;
