@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!--website-->
+        <title>Lansora Xchange Application</title>
+        <!-- WEBSITE ICON / TITLE BAR IMAGE -->
+        <link rel="icon" type="image/png" href="images/logo.png">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/apply.css">
+
+        <!--JAVASCRIPT-->
+        <script src="js/script.js" defer></script>
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+         <div class="container">
+
+            <!-- HEADER -->
+            <div class="top-section">
+
+                <h1>Lansora Xchange</h1>
+
+                <p>
+                    Secure Investment Application Portal <br>
+                    Complete the onboarding process to begin your investment journey.
+                </p>
+
+            </div>
+
+
+            <!-- FORM START -->
+            <form
+                name="investment-application"
+                method="POST"
+                data-netlify="true"
+                enctype="multipart/form-data"
+            >
+
+                <!-- REQUIRED FOR NETLIFY FORMS -->
+                <input
+                    type="hidden"
+                    name="form-name"
+                    value="investment-application"
+                >
+
+                <!-- REDIRECT -->
+                <input
+                    type="hidden"
+                    name="redirect"
+                    value="/submission.html"
+                >
+
+                <!-- PERSONAL INFORMATION -->
+                <h2>Personal Information</h2>
+
+                <div class="input-group">
+                    <label>Full Legal Name</label>
+                    <input type="text" name="fullname" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Date of Birth</label>
+                    <input type="date" name="dob" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Nationality</label>
+
+                    <select name="nationality" required>
+
+                        <option value="">Select Nationality</option>
+
+                        <option>United States</option>
+                        <option>United Kingdom</option>
+                        <option>Canada</option>
+                        <option>Germany</option>
+                        <option>France</option>
+                        <option>Italy</option>
+                        <option>Spain</option>
+                        <option>Netherlands</option>
+                        <option>Australia</option>
+                        <option>Nigeria</option>
+                        <option>South Africa</option>
+                        <option>Ghana</option>
+                        <option>Kenya</option>
+                        <option>India</option>
+                        <option>China</option>
+                        <option>Japan</option>
+                        <option>Brazil</option>
+                        <option>Mexico</option>
+                        <option>Saudi Arabia</option>
+                        <option>United Arab Emirates</option>
+                        <option>Other</option>
+
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Residential Address</label>
+                    <input type="text" name="address" required>
+                </div>
+
+                <div class="input-group">
+                    <label>City / State / Province</label>
+                    <input type="text" name="city_state" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Postal / ZIP Code</label>
+                    <input type="text" name="postal_code" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Occupation</label>
+                    <input type="text" name="occupation">
+                </div>
+
+                <div class="input-group">
+                    <label>Government Issued ID Type</label>
+
+                    <select name="id_type" required>
+
+                        <option value="">Select ID Type</option>
+
+                        <option>International Passport</option>
+                        <option>National ID Card</option>
+                        <option>Driver's License</option>
+
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>ID Number</label>
+                    <input type="text" name="id_number" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Upload Government Issued ID</label>
+                    <input type="file" name="id_upload" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Upload Selfie Verification</label>
+                    <input type="file" name="selfie_upload" required>
+                </div>
+
+
+                <!-- INVESTMENT INFORMATION -->
+                <h2>Investment Information</h2>
+
+                <div class="input-group">
+
+                    <label>Select Investment Plan</label>
+
+                    <select name="investment_plan" required>
+
+                        <option value="">Choose Plan</option>
+
+                        <option>Starter Plan</option>
+                        <option>Silver Plan</option>
+                        <option>Gold Plan</option>
+                        <option>Elite Plan</option>
+
+                    </select>
+
+                </div>
+
+                <div class="plan-box">
+
+                    <h3>Investment Plan Information</h3>
+
+                    <p>
+                        Starter Plan → minimum amount: $700 - $10,500 → Estimated Yield: 8% - 12% <br>
+                        Silver Plan → minimum amount: $10,500 - $20,700 → Estimated Yield: 15% - 20% <br>
+                        Gold Plan → minimum amount: $20,700 - $700,300 → Estimated Yield: 25% - 35% <br>
+                        Elite Plan → Institutional Strategy Access → possible advantage: Huge profits<br>
+                        for Elite plans contact Lansora Xchange directly <strong><a href="index.html#contact" target="_blank">Contact</a></strong>
+                    </p>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Investment Objective</label>
+
+                    <select name="investment_objective">
+
+                        <option>Long-Term Growth</option>
+                        <option>Passive Income</option>
+                        <option>Capital Preservation</option>
+                        <option>Portfolio Diversification</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- PAYMENT METHOD -->
+                <div class="input-group">
+
+                    <label>Payment Method</label>
+
+                    <select name="payment_method" required>
+
+                        <option value="">Select Payment Method</option>
+
+                        <option>USDT (ERC20)</option>
+                        <option>Bitcoin (BTC)</option>
+                        <option>Ethereum (ETH)</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- PAYMENT DETAILS -->
+                <h2>Payment Details</h2>
+
+                <div class="plan-box">
+
+                    <h3>Cryptocurrency Payment Information</h3>
+
+                    <p>
+                        Send payment using the selected cryptocurrency network below.
+                    </p>
+
+                    <!-- USDT -->
+                    <div class="wallet-box">
+
+                        <h4>USDT (ERC20)</h4>
+
+                        <div class="wallet-address">
+                            0x1a4C1B630b9f8adFa228f6dC44296c618A54f548
+                        </div>
+
+                        <p class="warning">
+                            Send ONLY USDT using the ERC20 Ethereum Network.
+                        </p>
+
+                    </div>
+
+
+                    <!-- BTC -->
+                    <div class="wallet-box">
+
+                        <h4>Bitcoin (BTC)</h4>
+
+                        <div class="wallet-address">
+                            bc1qm05ns5uuy7kvku2mrv3zh2zjnvwpw4qqzvwsf5
+                        </div>
+
+                        <p class="warning">
+                            Send ONLY Bitcoin (BTC) to this wallet address.
+                        </p>
+
+                    </div>
+
+
+                    <!-- ETH -->
+                    <div class="wallet-box">
+
+                        <h4>Ethereum (ETH)</h4>
+
+                        <div class="wallet-address">
+                            0x1a4C1B630b9f8adFa228f6dC44296c618A54f548
+                        </div>
+
+                        <p class="warning">
+                            Send ONLY Ethereum (ETH) using the Ethereum Network.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="input-group" style="margin-top:25px;">
+                    <label>Upload Payment Proof</label>
+                    <input type="file" name="payment_proof" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Transaction Hash (Optional)</label>
+                    <input type="text" name="transaction_hash">
+                </div>
+
+
+                <!-- TERMS -->
+                <h2>Terms & Conditions</h2>
+
+                <div class="input-group">
+
+                    <textarea readonly>
+
+                        You confirm that all information provided is accurate and truthful.
+
+                        The platform reserves the right to review, approve, or reject any application that fails compliance or verification requirements.
+
+                        All submitted information is handled securely and used strictly for onboarding and verification purposes.
+                    </textarea>
+
+                </div>
+
+                <div class="checkbox">
+
+                    <input type="checkbox" required>
+
+                    <label>
+                        I confirm that I have read and agreed to the platform terms and conditions.
+                    </label>
+
+                </div>
+
+                <div class="input-group" style="margin-top:20px;">
+                    <label>Digital Signature (Type Full Name)</label>
+                    <input type="text" name="signature" required>
+                </div>
+
+
+                <!-- SUBMIT BUTTON -->
+                <button class="submit-btn" type="submit">
+                    Complete Investment Application
+                </button>
+
+            </form>
+
+
+            <!-- FOOTER -->
+            <div class="footer">
+               <p><a href="index.html#contact">I need Help</a></p> <br/> • Secure • Encrypted • Verified
+            </div>
+
+        </div>
+
+    </body>
+</html>
