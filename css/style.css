@@ -9,6 +9,7 @@
             background:#0d0d0d;
             color:white;
             font-family:Arial, sans-serif;
+            overflow-x: hidden;
         }
 
         /* NAVBAR */
